@@ -19,6 +19,7 @@
     "fabric"
   ],
   "devDependencies": {
+    "fabric": "~1.6.4",
     "@types/jquery": "^3.3.29",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.0",
@@ -69,8 +70,7 @@
     "serve": "webpack-dev-server --inline --hot -d",
     "cpy-dist2doc": "mkdir -p doc/dist && cp -f -r dist doc",
     "doc": "jsdoc -c jsdoc.conf.json && npm run cpy-dist2doc",
-    "tslint": "tslint index.d.ts",
-    "postinstall": "npm install --no-save --no-optional fabric@~1.6.7"
+    "tslint": "tslint index.d.ts"
   },
   "dependencies": {
     "core-js": "2.4.1",
